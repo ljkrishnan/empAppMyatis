@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.jk.mapper.PostMapper">
+
+<resultMap id="empResultMap" type="com.jk.entity.Post">
+
+<result property = "postId" column = "id"/>
+<result property = "empName" column = "name"/>
+<result property = "empAge" column = "age"/>
+<result property = "profession" column = "profession"/>
+
+
+</resultMap>
+
+
+
+
+<select id="getAllEmps" resultMap="empResultMap">
+SELECT id, "name", age, profession FROM "Jayakrishnan".employee_table;
+</select>
+<select id="getPost" resultMap="empResultMap">
+SELECT * FROM "Jayakrishnan".employee_table WHERE id = #{id};
+</select>
+
+<insert id="insertPost">
+  insert into "Jayakrishnan".employee_table (name, age, profession)
+  values (#{empName},#{empAge},#{profession});
+</insert>
+
+<update id="updatePost">
+  update "Jayakrishnan".employee_table set
+    name = #{empName},
+    age = #{empAge},
+    profession = #{profession}
+  where id = #{postId};
+</update>
+
+<delete id="deletePost">
+  delete from "Jayakrishnan".employee_table where id = #{postId};
+</delete>
+
+</mapper>

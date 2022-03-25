@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Home</title>
+</head>
+<body style="background-color:powderblue;">
+
+<h1  style="font-size:50px; background-color:tomato; font-family:courier; text-align:center;">Hi, Welcome to Employee REST API App (Mybatis)</h1>
+<p style="color:Green; text-align:center;">
+<a href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwjPvvGZ-8n2AhXqzjgGHZSiBUUQFnoECAUQAQ&url=https%3A%2F%2Fchrome.google.com%2Fwebstore%2Fdetail%2Ftabbed-postman-rest-clien%2Fcoohjcphdfgbiolnekdpbcijmhambjff%3Fhl%3Den&usg=AOvVaw0P4Cfqz-w198DbVVHC5CLV">Please Use Chrome Extension: "tabbed postman rest client"
+</a>
+</p>
+<p >
+<h3 style="text-align:center; background-color:lightgreen;">1) Create an employee</h3>
+<h4 style="text-align:center;">localhost:8080/POST/employee</h4>
+<h5 style="text-align:center;">Test Data:</h5>
+<h5 style="text-align:center;">{
+        "empName": "Vignesh S",
+        "empAge": 51,
+        "profession": "Director"
+    }</h5>
+<h3 style="text-align:center; background-color:lightgreen;">2) View All employees</h3>
+<h4 style="text-align:center;">localhost:8080/GET/employee</h4>
+<h3 style="text-align:center; background-color:lightgreen;">3) View an employee with ID</h3>
+<h4 style="text-align:center;">localhost:8080/GET/employee/{id}</h4>
+<h3 style="text-align:center; background-color:lightgreen;">4) View employees with IDs</h3>
+<h4 style="text-align:center;">localhost:8080/GET/employee/ids/{ids}</h4>
+<h3 style="text-align:center; background-color:lightgreen;">5) Update an employee</h3>
+<h4 style="text-align:center;">localhost:8080/PUT/employee</h4>
+<h5 style="text-align:center;">Test Data:</h5>
+<h5 style="text-align:center;">{
+		"postId":	1,
+        "empName": "Marigold",
+        "empAge": 25,
+        "profession": "GM"
+    }</h5>
+<h3 style="text-align:center; background-color:lightgreen;">6) Delete an employee with ID</h3>
+<h4 style="text-align:center;">localhost:8080/DELETE/employee/id</h4>
+<h3 style="text-align:center; background-color:lightgreen;">7) Delete employees with IDs</h3>
+<h4 style="text-align:center;">localhost:8080/DELETE/employee/ids/{ids}</h4>
+<h3 style="text-align:center; background-color:tomato; font-family:courier;">THANK YOU!</h3>
+</p>
+
+</body>
+</html>
